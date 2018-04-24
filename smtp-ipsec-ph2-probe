@@ -1,0 +1,10 @@
+# The simple script gives results of 0 or 1 after asking by SNMP (Script checks if phase 2 established with an SA Destination Address)
+# Do not forget to use /32 on single IP
+
+:local sadstip XXX.XXX.XXX.XXX/32
+
+if ([/ip ipsec policy get value-name=ph2-state [find sa-dst-address=$sadstip]] = "established") do={
+    :put 1
+} else= {
+    :put 0
+}
