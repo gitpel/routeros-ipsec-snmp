@@ -14,7 +14,8 @@
 4. Download https://www.paessler.com/tools/snmptester for SNMP debugging also you can use *nix `snmpget` and `snmpwalk` (more info: https://wiki.mikrotik.com/wiki/Manual:SNMP#Run_Script)
 5. Check OIDs of scripts that you have on your RouterOS\Mikrotik using SNMP walk 
 ![alt text](https://raw.githubusercontent.com/gitpel/routeros-ipsec-snmp/master/snmp_tester_img_01.png "Paessler SNMP Tester")
-6. Change **8** to **18** in OID: 1.3.6.1.4.1.14988.1.1.**8**.1.1.2.X to 1.3.6.1.4.1.14988.1.1.**18**.1.1.2.X to execute the script via SNMP and get results
+###### As you can see in my example I have 2 scripts with OIDs: 1.3.6.1.4.1.14988.1.1.8.1.1.2.1 and 1.3.6.1.4.1.14988.1.1.8.1.1.2.2, I will use the first one for example
+6. Change **8** to **18** in OID: 1.3.6.1.4.1.14988.1.1.**8**.1.1.2.1 to 1.3.6.1.4.1.14988.1.1.**18**.1.1.2.1 to execute the script via SNMP and get results
 6. Check result of the script that you have on your RouterOS\Mikrotik using SNMP get
 ![alt text](https://raw.githubusercontent.com/gitpel/routeros-ipsec-snmp/master/snmp_tester_img_02.png "Paessler SNMP Tester")
 7. Add the SNMP probe check to your SNMP Management System (In my case we will use PRTG)
