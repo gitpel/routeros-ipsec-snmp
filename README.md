@@ -16,6 +16,7 @@
 ![alt text](https://raw.githubusercontent.com/gitpel/routeros-ipsec-snmp/master/snmp_tester_img_01.png "Paessler SNMP Tester")
 6. Change **8** to **18** in OID: 1.3.6.1.4.1.14988.1.1.**8**.1.1.2.X to 1.3.6.1.4.1.14988.1.1.**18**.1.1.2.X to execute the script via SNMP and get results
 6. Check result of the script that you have on your RouterOS\Mikrotik using SNMP get
+![alt text](https://raw.githubusercontent.com/gitpel/routeros-ipsec-snmp/master/snmp_tester_img_02.png "Paessler SNMP Tester")
 7. Add the SNMP probe check to your SNMP Management System (In my case we will use PRTG)
 8. Done
 #### Now using SNMP you can ask and receive a result of the status of yours IPsec Tunnels
